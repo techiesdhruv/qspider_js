@@ -1,0 +1,205 @@
+JavaScript: 
+
+JavaScript is the most popular programming language which is used to create interactive webpages.
+
+JavaScript is the client-server side scripting language which is used to create dynamic webpages.
+
+JavaScript was invented by Brendan Eich in 1995, and became an ECMA standard in 1997.
+
+ECMA-262 is the official name of the standard. ECMAScript is the official name of the language.
+
+Current version of JS is ES6 (introduced after 2015).
+
+History of JavaScript:
+
+After the release, JavaScript was renamed.
+
+
+M (Mocha) → LS (LiveScript) → JS (JavaScript)
+
+👉 Brendan Eich developed it in 1995, within 15 days.
+
+
+
+In the year 1997 they handed over this JavaScript to ECMA Corporation.
+
+ECMA stands for European Computer Manufacturer Association.
+
+The official name of JavaScript: ECMAScript
+
+The first stable version of JavaScript is ES6, introduced after 2015.
+
+Current version of JavaScript: ES-14 / ES2024
+
+✅ Advantages of JS
+
+Easy to learn and implement
+
+Reduces server load
+
+Efficient performance
+
+Regular updates
+
+Platform independent
+
+It has more frameworks and libraries
+
+
+
+H/W: Find the disadvantages of JS.
+
+
+
+
+**Characteristics of JavaScript**
+
+- **Client-side scripting language:**
+  - The code is readable, analyzable, and executable by browsers itself.
+
+- **Interpreted Language:**
+  - JavaScript is an interpreted language, meaning it is executed line by line at runtime.
+
+- **Dynamically typed language:**
+  - JavaScript is dynamically typed, which means you don't need to specify the data type of a variable when declaring it. The type is determined at runtime.
+
+- **Weakly Typed language:**
+  - Semicolon is not mandatory at all times.
+
+- **Synchronous in nature:**
+  - It executes line by line; we can make it asynchronous.
+
+- **Java is 100% object-based language:**
+  - Executes one task at a time, which can be asynchronous.
+  
+  **Asynchronous**
+  - Promises
+  - Callbacks
+  - Async await
+
+
+  Environmental Setup
+
+1) We can run JavaScript code in two environments:
+   - Browser
+   - Node.js
+
+2) Browser understands JS through a JS engine, and every browser consists of a JavaScript engine that helps to run JS code.
+
+Browsers:
+   Chrome
+   Mozilla Firefox
+   Microsoft Edge
+   Safari
+
+JS engines:
+   V8
+   Spider Monkey
+   Chakra
+   JavaScript Core (Webkit)
+
+* Node.js is just a platform to run JavaScript
+   -> It is not a framework or a language
+   -> Parses JavaScript
+   -> Converts high-level code to Byte code
+
+
+
+   1. Browser understands JavaScript code through a JS engine, and each browser consists of its own JS engine to help execute JS code. Examples:
+   - Chrome uses V8 engine.
+   - Mozilla Firefox uses Spider Monkey.
+   - Microsoft Edge uses Chakra engine.
+   - Safari uses WebKit engine (JavaScript Core).
+
+2. JavaScript Engine components:
+   - Parser: Responsible for parsing the code.
+   - AST (Abstract Syntax Tree): Converts code into bytecode representations (e.g., 101010, 110000, 100110, etc.)
+   - Call Stack: Manages function executions.
+   - Heap Area: Stores objects.
+   - JIT (Just-in-Time Compiler): Optimizes bytecode during execution.
+   - Interpreter: Executes bytecode line by line.
+
+3. JS Engines connect to the Browser for rendering pages, and work alongside the processor to execute JavaScript code.
+
+
+
+
+5. Identifier name should be CamelCase.
+
+7. Variable: variable is a block of memory which is store used to store the data.
+
+Eg: var xyz = 20;
+    let abc = "Hello";
+    const py = "language";
+
+|                     | var          | let          | const                            |
+|-------             -|--------------|--------------|----------------------------------|
+| Declaration         | Yes          | Yes          | Declaration with initialization |
+| Initialization      | Yes          | Yes          | No                               |
+| Reinitialization    | Yes          | Yes          | No                               |
+| Redeclaration       | Yes          | Yes          | No                               |
+| Scope               | Global Scope | Script Scope | Script Scope                     |
+| Hoisting            | Yes          | Yes (TDZ) but not assign default value.| Yes (TDZ)but not assign default value                        |
+                                    
+
+TDZ = Temporal Dead Zone
+
+Const: we can't declaration only for const, it is possible only for var and let.
+
+So for const we have to declaration with initialization.
+
+
+const is declare and initialization both possible
+const c = 20;
+
+Var (not secure)
+
+Before ES6 - let, const
+                ↓
+        Possible Security
+        Variable
+        we can't reinitialize
+        const variable.
+        eg:- const a = 20;
+                a = 30;
+                and give error.
+
+Var a;
+a = 20;
+let b;
+b = 40;
+
+Declaration of Var:-
+→ We can redeclare the var variable. (overcome this possible we have let and const.)
+
+→ For let variable, redeclaration is not possible.
+
+→ For const also, redeclaration is not possible.
+
+* Just because of script scope let and const is more secure than var.
+
+- Hoisting:-
+Hoisting is javascript's default behavior of moving all declarations to the top of the current scope (to the top of the current script or the current function).
+
+In JavaScript, a variable can be declared after it has been used.
+
+Why hoisting is not possible:
+
+If any variable is present in TDZ we cannot access that variable.
+
+Let a
+
+Internally
+
+console.log(a)
+
+let a = 30;
+
+a = 30;
+
+TDZ is the zone b/w variable declaration and initialization.
+
+1) When we provide only one value then only it will come out of the TDZ.
+2) That is why hoisting is not possible.
+
+Because of scope. Inside that TDZ when we declare any variable it will go and sit inside TDZ until we are not initialized JS can't access and that is why hoisting is not possible.

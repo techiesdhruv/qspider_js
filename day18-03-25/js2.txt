@@ -1,0 +1,76 @@
+There are two ways to use JS.
+1. Internal JS
+2. External JS
+
+1. Internal JS:
+- A JS which is written inside the HTML file is called Internal JS.
+- Inside the body tag, we use <script>.
+- JavaScript should be written at the bottom of the <body> tag.
+  Some order of execution:
+  1. HTML
+  2. CSS
+  3. JS
+
+# Printing statement
+console.log(object);
+e.g., console.log("Hello");
+
+2. External JavaScript:
+- For external JS, we have to create a separate new file with the extension .js (e.g., index.js).
+- We have to connect the JavaScript file with the HTML file.
+  At the bottom of <body>:
+  <script src="index.js"></script>
+
+
+  There are two types of hoisting:
+
+1. Variable Hoisting  
+2. Function Hoisting  
+
+Undefined: For every variable, the default value in JavaScript is `undefined`.  
+
+Example with `var` (where hoisting is possible):  
+var a;  
+console.log(a); // Outputs: undefined  
+var a = 30;  
+
+Explanation:  
+- Hoisting moves declarations to the top of their current scope, allowing variables to be accessed before they are explicitly declared.  
+
+TDZ (Temporal Dead Zone):  
+- Occurs within the script scope.  
+- Variables using `let` or `const` are in the TDZ until they are initialized.  
+- Accessing variables in the TDZ results in a ReferenceError.  
+
+[Diagram Reference]
+- Cannot access:  
+  let a;  
+  const b;  
+
+TDZ ends once variables are properly initialized.  
+
+Script Scope Details:  
+- Hoisting with `var` creates global scope.  
+- TDZ ensures better control and safety in `let`/`const`.
+
+
+# Token
+Building blocks of every programming language.
+1. keyword: Predefined words whose tasks are already predefined.
+2. Identifiers: The name given for the variables, objects, etc.
+3. Literals: The values written by developers.
+4. Operators
+5. Comments
+
+# Variables
+In JavaScript, we have 3 keywords to declare variables (`var`, `let`, `const`).
+
+→ Syntax to declare variables:
+var/let/const identifier;
+var/let/const identifier = value;
+
+Rules of identifiers:
+1. Identifier names should not be a keyword.
+2. Identifiers should not start with a number.
+3. Identifier names should not contain any whitespace.
+4. Special characters are not allowed in identifiers except '_' and '$'.

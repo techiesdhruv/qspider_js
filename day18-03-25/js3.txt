@@ -1,0 +1,261 @@
+JavaScript Notes:
+
+1. `document.write("Hello")`
+   - Prints output on the web interface.
+
+2. `console.error("syntax error")`
+   - Displays an error message in the console.
+
+3. `console.time()`
+   - A built-in timer method in JavaScript.
+
+4. `console.warn("")`
+   - Displays a warning message in the console.
+
+Browser Popup Methods:
+There are three types of browser popup methods in JavaScript:
+1. `alert()`
+2. `prompt()`
+3. `confirm()`
+
+|  Methods   | Differences           |
+|------------|-----------------------|
+| writeln()  | Outputs with a line break |
+| write()    | Outputs without line breaks |
+
+Details about `alert()`:
+- `alert()` is used to show alert messages in the browser.
+- It is a global object of the window in JavaScript.
+- By default, the `alert()` is not supported in Node.js.
+
+
+Eg: console.log(window) // try this
+
+window.alert(" ") // use dangers
+console.log(a);
+
+-> Alert Method will not return any kind of value (undefined).
+
+It is use to show alert msg.
+
+2) Prompt():-
+   It is used to take the input data from the user.
+
+Syntax:
+const data=window.prompt("Ex"); //Enter your name
+console.log(data);
+
+"It not priority, because it is line by line executed."
+
+- The return types of prompt is string.
+- Null types of prompt is object.
+
+Prompt()
+- Only with window object is possible.
+
+3) Confirm():-
+   It is used to show the confirmation msg on browser.
+
+-> The return type of confirm method is boolean.
+Syntax: const data=window.confirm(" ");
+console.log(data);
+
+
+Type casting in JavaScript:
+Type casting is a process of converting one type of data into another type.
+
+There are two types:
+1. Implicit type casting
+2. Explicit type casting
+
+1. Implicit type casting:
+A type casting done automatically by the JavaScript engine is called implicit type casting.
+
+Concatenation is used in string operations:
+Examples:
+20 + "30" -> "2030"
+10 - "30" -> -20
+
+(additional) (subtraction) (division) (modulus) (multiplication)
+(concatenation) (type casting)
+
+Example Code:
+let a = 10;
+const b = "30";
+
+console.log(a + b);
+console.log(10 - "30");
+console.log(10 + 20 + "30" + 60);
+console.log(10 + not + "10" + 60);
+
+2. Explicit type casting (Constructors):
+Explicit type casting is manually done by the programmer using constructors.
+
+Examples:
+- Converting a string to a number using `Number()`.
+- Converting a number to a string using `String()`.
+- Converting data types to boolean using `Boolean()`.
+
+Note:
+NaN stands for "Not a Number".
+
+
+
+1. Any value which is not a valid data type converted into a number has the datatype NaN (Not a Number).
+   - Example:
+     let a = 20;
+     const b = Number("a");
+     console.log(b);
+     console.log(typeof b);
+
+**False Values:**  
+0  
+null  
+undefined  
+false  
+NaN  
+""
+
+**Truth Values:**  
+1  
+"a"  
+
+**Operators in JavaScript**  
+Predefined symbols used to perform a specific task.  
+
+**Types of Operators:**  
+1. Arithmetic Operators: +, -, *, /, %, ++, --  
+2. Arithmetic Assignment Operators: +=, -=, *=, /=, %=  
+3. Comparison Operators: >, <, ==, !=, >=, <=, ===, !==  
+4. Logical Operators: &&, ||, !  
+5. Ternary Operators: (Condition) ? True stmt : False stmt  
+
+
+
+Conditional Statements for JavaScript
+
+Conditional statements are used to perform different actions based on different conditions.
+
+- Use (if) to specify a block of code to be executed, if a specified condition is true.
+- Use (else) to specify a block of code to be executed, if the same condition is false.
+- Use (else if) to specify a new condition to test, if the first condition is false.
+- Use (switch) to specify many alternative blocks of code to be executed.
+
+if
+if else - one condition
+else if b
+switch
+Conditional
+
+let age = prompt("Enter your age");
+if (age < 12) {
+    console.log("Not eligible")
+} else if (age >= 18 && age <= 101) {
+    console.log("Eligible")
+}
+
+(multiple condition)
+
+Switch (age)?
+Case 1:10: "8" break;
+Case 1: "8" break;
+Switch (age <18)
+{
+    case value:
+    break;
+    default:
+    break;
+}
+
+If we forget break in full execute all the condition except default.
+
+# let age = prompt("Enter your age");
+Switch (
+{
+    case age <10;
+    console.log("not eligible go to school");
+    break;
+    case age >=10 && age <18;
+    console.log("not eligible go to college");
+    break;
+    case age >18;
+    console.log("eligible");
+    break;
+    default;
+    console.log("Please Enter the proper value!");
+}
+
+* We should not pass any Condition in Switch; we have to pass any Value in Switch.
+
+* Loops - Loops can execute a block of code a number of times.
+
+1. While loop:
+   - Repeats a statement or group of statements while a given condition is true.
+   - Tests the condition before executing the loop body.
+
+2. Do-while loop:
+   - Similar to a while statement, except it tests the condition at the end of the loop body.
+
+3. For loop:
+   - Executes a sequence of statements multiple times and simplifies the management of the loop variable.
+
+* Parse int:
+   - It first checks if the value is valid; if valid, it converts it to a number.
+   - We can pass string values, but the string must start with numbers.
+
+* Parse float
+
+* isNaN:
+   - Checks if the given value is NaN (Not a Number).
+   - Returns true if the value is NaN, otherwise false.
+
+
+   JavaScript Code: Palindrome Number Check
+
+let num = parseInt(prompt("Enter the number"));
+console.log(num);
+console.log(typeof num);
+let c = 0;
+while (num > 0) {
+    let a = num % 10;
+    c = c * 10 + a;
+    num = parseInt(num / 10);
+}
+if (xyz == c) {
+    console.log("given number is palindrome number");
+} else {
+    console.log("given number is not palindrome number");
+}
+
+Homework Problems:
+1. Write a JavaScript program to find even numbers in a given range.
+2. Write a JavaScript program to find odd numbers in a given range.
+3. Find the price.
+
+Finding the even numbers between two ranges
+
+let start = parseInt(prompt("Enter the starting number"));
+let end = parseInt(prompt("Enter the ending number"));
+
+# while (start < end) {
+    if (start % 2 == 0) {
+        console.log(start);
+    }
+    start++;
+}
+
+# do {
+    if (start % 2 == 0) {
+        console.log(start);
+    }
+    start++;
+} while (start < end);
+
+1) Check the condition
+2) Execute the statement
+3) Update the value
+
+# While loop is used when we don't know the number of executions.
+
+# For loop is used when we know the number of executions.
+
