@@ -126,7 +126,7 @@ var a=[10,20,"Hello"];
 
 
 // --------------------------------------------------► slice(): It will return a portion of an array without modifying the original array.-----------------
-                                                      
+                                                    //  (or) it will used to specific part from the array
                                                         // syntax : Array.slice (startindex,endindex)
 
                                                         // startindex included but endindex is not included
@@ -178,7 +178,9 @@ var a=[10,20,"Hello"];
 
 // var a=[10,20,10,"Hello"];
 
-// console.log(a.join(""));
+// console.log(a.join()); //output: 10,20,10,"Hello"
+
+// console.log(a.join("")); //output: 102010hello
 // // console.log( typeof a.join(""));
 
 
