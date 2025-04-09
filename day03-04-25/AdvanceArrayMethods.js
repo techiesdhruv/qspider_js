@@ -263,4 +263,15 @@ arr=[10,20,10,50,60,50]
 
  //wra to find the frequency of the array element
 
+ const arr2=[30,50,70,30,40,30,50,70,30,50];
+ const frequency = [];
+ for (let i=0; i< arr2.length -1; i++){
+    let count=1;
+    for (let j = i+1; j < arr2.length; j++) {
+        if (arr2[i]==arr2[j] && arr2[j] !=undefined)
+      count++;
+    arr2[j] =undefined;
+        
+    }
+ }
  
