@@ -50,13 +50,13 @@
 
 // ---------------------------------------------------------------------------------String slice()----------------------------------
 //                                                     it is used to fetech the part of the given string.
-                                                    //  it doesnot affect the existing String.
-                                                    // it can accept negative index value.
+//  it doesnot affect the existing String.
+ // it can accept negative index value.
 
-                                                //  syntax:
-                                                //  varname.slice(startingindex,endingindex)
-                                                // startingindex ---included
-                                                // endingindex---excluded
+//  syntax:
+//          varname.slice(startingindex,endingindex)
+// startingindex ---included
+// endingindex---excluded
 
 
 // example
